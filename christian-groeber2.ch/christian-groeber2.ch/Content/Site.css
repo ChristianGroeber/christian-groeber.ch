@@ -11,20 +11,34 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
     padding-top: 50px;
-    margin-bottom: 2000px;
     overflow-x: hidden;
 }
 
 main{
     background-color:rgba(0,0,0,0.7) !important;
-    min-height:750px !important;
 }
 
 .post{
     font-family:PlayfairDisplay-Regular;
     font-size: 20px;
     color: white;
+    background-repeat:no-repeat;
 }
+
+.padded-post{
+    padding:30px;
+    padding-top:100px;
+    background-repeat: no-repeat;
+}
+
+.post-box{
+    display: block;
+    height: 100%;
+}
+.post-empty-box{
+    display: block;
+}
+
 
 .post-title{
     font-family: PlayfairDisplay-Bold;

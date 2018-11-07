@@ -7,11 +7,20 @@
         <script>
             $(document).ready(function () {
                 var winHeight = $(window).height();
+                var winWidth = $(window).width();
                 console.log(winHeight);
                 $(".jumbotron").css("background-image", "url(../Content/img/DSCF5260_Lredit.jpg)");
-                //$(".about-this-page").css("background-image", "url(../Content/img/back1.jpg)");
-                $(".about-this-page").css("heigth", "750px");
+                $(".post.about-this-page").css("background-image", "url(../Content/img/DSCF5259_Lredit.jpg)");
+                $(".post.about-this-page").css("height", winHeight + "px");
+                $(".post").css("background-size", $(window).width() + "px auto");
                 $("h1").css("padding-top", ($(window).height() / 2) + "px");
+
+                $(".post-box").css("width", winWidth * 0.8 + "px");
+                $(".post-empty-box").css("width", winWidth * 0.2 + "px");
+
+                $(".post-box.about-this-page").css("background-image", "url(../Content/img/back1.png)");
+                $(".post-box").css("background-size", $(window).height() + "px auto");
+                
             });
         </script>
         <h1>Welcome to my homepage</h1>
@@ -20,18 +29,16 @@
 
 <div class="main">
     <div class="post about-this-page">
-        <h2 class="post-title">About this page</h2>
-        <div class="post-text">
-            Nisl accusam takimata sanctus ullamcorper wisi kasd stet amet feugait consetetur voluptua nisl justo dolore qui aliquip lorem
-            dolore lorem aliquyam nonumy invidunt nulla nonummy liber feugiat erat erat eirmod eu stet nihil clita facer diam gubergren ipsum dolor
-            invidunt diam gubergren consequat magna invidunt ipsum vulputate elitr takimata sed duo nibh amet erat et praesent invidunt amet vel lorem eirmod
-            eos labore takimata lorem ea dolor vel ipsum iusto in autem sed ea in accusam diam sanctus accusam tincidunt rebum consequat eos labore et duis justo
-            dolore dolor et sed gubergren duo no lorem amet at erat et accusam velit dolor clita duo dolore est lorem erat eos consetetur magna erat
-            sanctus erat diam et sed feugiat tempor ea nulla ad ipsum facilisis magna dolore elit ad dolores imperdiet amet exerci invidunt consectetuer sit duo
-            vero aliquam sanctus ea amet invidunt doming tempor laoreet kasd eu eos justo erat justo stet sed dolores exerci amet dolore ut vulputate
-            praesent in et stet iriure duis takimata dolore dolore feugiat sanctus sit odio euismod et tempor at duo clita sit et dolores nisl vel tempor
-            hendrerit et ut eirmod diam tincidunt ut eirmod invidunt tation at accumsan kasd lorem vulputate et
+        <div class="post-box about-this-page">
+            <div class="padded-post">
+                <h2 class="post-title">About this page</h2>
+                <div class="post-text">
+                    On here I will show you who I am and what I love doing. <br /><br />
+                    <p style="font-size: smaller">Keep scrolling to see a short summary of what you fill find here or go directly to one of the sub pages via the navigation</p>
+                </div>
+            </div>
         </div>
+        <div class="post-empty-box"></div>
     </div>
 
 </div>

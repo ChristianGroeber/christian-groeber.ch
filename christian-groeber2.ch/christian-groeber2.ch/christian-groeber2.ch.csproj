@@ -158,7 +158,9 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\img\back1.jpg" />
+    <Content Include="Content\img\back1.png" />
+    <Content Include="Content\img\back1.svg" />
+    <Content Include="Content\img\DSCF5259_Lredit.jpg" />
     <Content Include="Content\img\DSCF5260_Lredit.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
