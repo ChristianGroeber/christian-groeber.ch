@@ -9,20 +9,76 @@
                 var winHeight = $(window).height();
                 var winWidth = $(window).width();
                 console.log(winHeight);
-                $(".jumbotron").css("background-image", "url(../Content/img/DSCF5260_Lredit.jpg)");
-                $(".post.about-this-page").css("background-image", "url(../Content/img/DSCF5259_Lredit.jpg)");
-                $(".post.about-this-page").css("height", winHeight + "px");
+                //$(".jumbotron").css("background-image", "url(../Content/img/DSCF5260_Lredit.jpg)");
+                //$(".post.about-this-page").css("background-image", "url(../Content/img/DSCF5259_Lredit.jpg)");
+                $(".post").css("height", winHeight + "px");
                 $(".post").css("background-size", $(window).width() + "px auto");
-                $("h1").css("padding-top", ($(window).height() / 2) + "px");
+                //$(".post-text").css("padding-top", "80px");
+                $("h1").css("padding-top", $(window).height() / 2 + "px");
 
                 $(".post-box").css("width", winWidth * 0.8 + "px");
                 $(".post-empty-box").css("width", winWidth * 0.2 + "px");
 
-                $(".post-box.about-this-page").css("background-image", "url(../Content/img/back1.png)");
+                //$(".post-box.about-this-page").css("background-image", "url(../Content/img/back1.png)");
+                //$(".post-box.about-this-page").css("background-repeat", "no-repeat");
                 $(".post-box").css("background-size", $(window).height() + "px auto");
-                
+                //$(".post-text.about-this-page").css("max-width", "500px");
+
+                //$(".post.about-me").css("background-image", "url(../Content/img/DSCF5408_Lredit.jpg)");
+                //$(".post-box.about-me").css("background-image", "url(../Content/img/back2.png)");
+                //$(".post-text.about-me").css("max-width", "500px");
+                //$(".post-box.about-me").css("background-position", "top right");
+
             });
         </script>
+
+        <style>
+            .jumbotron {
+                background-image: url(../Content/img/DSCF5260_Lredit.jpg);
+            }
+
+            .post.about-this-page {
+                background-image: url(../Content/img/DSCF5259_Lredit.jpg);
+            }
+
+            .post.about-me {
+                background-image: url(../Content/img/DSCF5408_Lredit.jpg);
+            }
+
+            .post-text {
+                padding-top: 80px;
+            }
+
+                .post-text.about-this-page {
+                    max-width: 500px;
+                }
+
+                .post-title.about-me{
+                    float:right;
+                    text-align:right;
+                }
+
+                .post-text.about-me {
+                    float:right;
+                    max-width: 400px;
+                    text-align: right;
+                }
+
+            .post-box {
+                background-repeat: no-repeat;
+            }
+
+                .post-box.about-this-page {
+                    background-image: url(../Content/img/back1.png);
+                }
+
+                .post-box.about-me {
+                    background-image: url(../Content/img/back2.png);
+                    background-position: right;
+                    display: block;
+                    float: right;
+                }
+        </style>
         <h1>Welcome to my homepage</h1>
     </div>
 </div>
@@ -32,13 +88,28 @@
         <div class="post-box about-this-page">
             <div class="padded-post">
                 <h2 class="post-title">About this page</h2>
-                <div class="post-text">
+                <div class="post-text about-this-page">
                     On here I will show you who I am and what I love doing. <br /><br />
                     <p style="font-size: smaller">Keep scrolling to see a short summary of what you fill find here or go directly to one of the sub pages via the navigation</p>
                 </div>
             </div>
         </div>
         <div class="post-empty-box"></div>
+    </div>
+
+    <div class="post about-me">
+        <div class="post-empty-box"></div>
+        <div class="post-box about-me">
+            <div class="padded-post">
+                <h2 class="post-title about-me">About Me</h2>
+                <div class="post-text about-me">
+                    I am a 20 year old IT school in Aarau and Baden, Switzerland.<br />
+                    In my free time I love taking pictures and editing them and creating websites.<br /><br />
+
+                    If you would like to know more check out the “About me” page.
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>
