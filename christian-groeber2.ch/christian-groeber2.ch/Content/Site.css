@@ -12,10 +12,47 @@ h1, h2, h3, h4, h5, h6 {
 body {
     padding-top: 50px;
     overflow-x: hidden;
+    font-family: PlayfairDisplay-Regular;
 }
 
 main{
     background-color:rgba(0,0,0,0.7) !important;
+}
+
+footer{
+    background-color:black;
+    color:white;
+}
+
+.site-content {
+    margin-top: 40px;
+    padding: 30px;
+    display: block;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(230,230,230);
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+}
+
+.profile-image{
+    max-height: 200px;
+    float:right;
+    margin-top: -80px;
+}
+
+.resume{
+    padding:20px;
+}
+
+.resume-field{
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+.smaller{
+    margin-right: 5px !important;
+    margin-left: 5px !important;
 }
 
 .post{

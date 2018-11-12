@@ -26,6 +26,8 @@
                         document.location.href = "/Home/Projects";
                     } else if ($(this).hasClass("contact")) {
                         document.location.href = "/Home/Contact";
+                    } else if ($(this).hasClass("other")) {
+                        document.location.href = "/Home/Other";
                     } else {
                         alert("404 Page doesn't exist");
                     }
@@ -51,11 +53,15 @@
             }
 
             .post.projects {
-                background-image: url('../../Content/img/fence.jpg');
+                background-image: url('../Content/img/fence.jpg');
             }
 
             .post.contact {
-                background-image: url('../../Content/img/guy-walking.jpg');
+                background-image: url('../Content/img/guy-walking.jpg');
+            }
+
+            .post.other {
+                background-image: url('../Content/img/building.jpg');
             }
 
             .post-text {
@@ -98,6 +104,10 @@
                     max-width: 350px;
                 }
 
+                .post-text.other{
+                    max-width:300px;
+                }
+
             .post-box {
                 background-repeat: no-repeat;
             }
@@ -114,18 +124,22 @@
                 }
 
                 .post-box.photography {
-                    background-image: url('../../Content/img/back3.png');
+                    background-image: url('../Content/img/back3.png');
                 }
 
                 .post-box.projects {
-                    background-image: url('../../Content/img/back4.png');
+                    background-image: url('../Content/img/back4.png');
                 }
 
                 .post-box.contact {
-                    background-image: url('../../Content/img/back5.png');
+                    background-image: url('../Content/img/back5.png');
                     background-position:right;
                     display:block;
                     float:right;
+                }
+
+                .post-box.other {
+                    background-image: url('../Content/img/back6.png');
                 }
 
             .button {
@@ -155,6 +169,10 @@
                 .button.contact {
                     background-color: rgba(20,242,205,0.8);
                     margin-left:250px !important;
+                }
+
+                .button.other {
+                    background-color: rgba(206,237,24, 0.8)
                 }
 
             p.button-text{
@@ -234,10 +252,21 @@
                 <h2 class="post-title contact">Contact</h2>
                 <div class="post-text contact">
                     Since I am what they call a “Millennial” there are numerous ways to contact me.
-                    <div class="button contact"><p class="button-text" contact">Contact</p></div>
+                    <div class="button contact"><p class="button-text contact">Contact</p></div>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="post other">
+        <div class="post-box other">
+            <div class="padded-post">
+                <h2 class="post-title other">Other</h2>
+                <div class="post-text other">
+                    I also do some other stuff so click here to read about that.
+                    <div class="button other"><p class="button-text other">Other</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
