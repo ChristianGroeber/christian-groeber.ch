@@ -18,5 +18,15 @@ namespace christian_groeber2.ch.Controllers
         {
             return View();
         }
+
+        public ActionResult howToPhotography()
+        {
+            return View();
+        }
+
+        public ActionResult CokePad()
+        {
+            return View();
+        }
     }
 }
