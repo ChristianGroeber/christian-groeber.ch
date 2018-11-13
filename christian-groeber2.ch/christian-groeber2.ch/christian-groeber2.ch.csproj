@@ -183,6 +183,7 @@
     <Content Include="Content\img\DSCF5259_Lredit.jpg" />
     <Content Include="Content\img\DSCF5260_Lredit.jpg" />
     <Content Include="Content\img\DSCF5408_Lredit.jpg" />
+    <Content Include="Content\img\projects\howToPhotography\web1.PNG" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
