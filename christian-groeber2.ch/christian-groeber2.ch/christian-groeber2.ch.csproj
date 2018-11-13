@@ -148,6 +148,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProjectsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -159,6 +160,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\custom css\contact.css" />
+    <Content Include="Content\custom css\projects.css" />
     <Content Include="Content\img\About-me\P3300104_Lredit.jpg" />
     <Content Include="Content\img\building.jpg" />
     <Content Include="Content\img\back6.png" />
@@ -224,6 +226,8 @@
     <Content Include="Views\Home\Projects.cshtml" />
     <Content Include="Views\Home\Photography.cshtml" />
     <Content Include="Views\Home\Other.cshtml" />
+    <Content Include="Views\Projects\PreciousHands.cshtml" />
+    <Content Include="Views\Projects\ParisBlog.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
