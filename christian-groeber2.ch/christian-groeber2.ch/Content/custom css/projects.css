@@ -1,9 +1,20 @@
-﻿.project {
+﻿body{
+    background-color:rgb(232, 232, 232);
+}
+
+.site-content{
+    background-color:rgba(179, 179, 179, 0) !important;
+    width:100% !important;
+    box-shadow:none !important;
+}
+
+.row{
+    margin-bottom: 20px!important;
+}
+
+.project {
     display: block;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgb(240,240,240);
+    width: 100%;
     box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
     padding:15px;
     margin-top: 10px;
@@ -23,4 +34,20 @@ a:hover{
 h1, h2, h3, h4, h5, h6, p{
     padding-bottom:15px !important;
     line-height:25px !important;
+}
+
+.precious-hands{
+    background-color:rgba(249, 23, 23, 0.5);
+}
+
+.paris-blog{
+    background-color:rgba(27, 28, 244, 0.5);
+}
+
+.howToPhotography{
+    background-color:rgba(86, 240, 31, 0.5);
+}
+
+.CokePad{
+    background-color:rgba(207, 233, 27, 0.5);
 }
