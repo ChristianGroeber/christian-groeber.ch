@@ -4,14 +4,23 @@
     //Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <link href="~/Content/custom css/projects.css" rel="stylesheet" />
-<div class="site-content">
+<link href="~/Content/Site.css" rel="stylesheet" />
+<script>
+    $(document).ready(function () {
+        if ($(".site-content").hasClass("howToPhotography")) {
+            $("body").css("background-color", $(".howToPhotography").css("background-color"));
+            $(".site-content").removeClass("howToPhotography");
+        }
+    });
+</script>
+<div class="site-content howToPhotography">
     <h2>My very first Website</h2>
-    <h3>
+    <h4>
         This is my very first website.<br />
         I created it during my first year of IMS and it is mostly static because I didn't know any scripting language yet. <br />
         I spent many hours working on this page and, even though it is a very simple page and nothing overly impressive I am still
         very proud of it.<br />
-    </h3>
+    </h4>
     <p>
         I really enjoyed learning how to create websites so I decided to make one for myself about my hobby photography.<br />
         I spent many, many hours on it, trying to also somehow implement a Layout (I had no idea MVC and Razor existed back then)
@@ -24,8 +33,14 @@
         I had to test around and see if I could get it back to look properly for ages but I eventually did it.<br />
         By that time I had definitely seen enough of CSS so I just went ahead and created all the pages from scratch to make it look
         good on Mobile
-        <img src="~/Content/img/projects/howToPhotography/web1.PNG" />
     </p>
+    <div class="row">
+        <img class="col-sm-4" src="~/Content/img/projects/howToPhotography/web1.PNG" />
+        <p class="col-sm-4">--></p>
+        <img class="col-sm-4" src="~/Content/img/projects/howToPhotography/web2.PNG" />
+    </div>
+        
+    
     <br />
     <h3></h3>
 </div>

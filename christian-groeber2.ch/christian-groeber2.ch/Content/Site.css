@@ -7,17 +7,17 @@
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0 !important;
+    font-family: PlayfairDisplay-Regular;
 }
 
 p{
-    font-family: Calibri;
+    font-family: Tinos-Regular;
     font-weight:200;
 }
 
 body {
     padding-top: 50px;
     overflow-x: hidden;
-    font-family: PlayfairDisplay-Regular;
     
 }
 
@@ -107,6 +107,7 @@ footer{
     background-color: rgba(0,0,0, 1);
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
+    font-family: Tinos-Regular !important;
 }
 
 .jumbotron {
@@ -172,4 +173,20 @@ textarea {
 @font-face {
     font-family: 'PlayfairDisplay-Black';
     src: url('../fonts/PlayfairDisplay-Black.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Tinos-Bold';
+    src: url('../fonts/Tinos-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Tinos-BoldItalic';
+    src: url('../fonts/Tinos-BoldItalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Tinos-Italic';
+    src: url('../fonts/Tinos-Italic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Tinos-Regular';
+    src: url('../fonts/Tinos-Regular.ttf') format('truetype');
 }

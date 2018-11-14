@@ -2,7 +2,7 @@
     background-color:rgb(232, 232, 232);
 }
 
-.site-content{
+.main-page{
     background-color:rgba(179, 179, 179, 0) !important;
     width:100% !important;
     box-shadow:none !important;
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .howToPhotography{
-    background-color:rgba(86, 240, 31, 0.5);
+    background-color:rgba(86, 240, 31, 0.5) !important;
 }
 
 .CokePad{

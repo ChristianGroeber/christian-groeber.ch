@@ -184,6 +184,7 @@
     <Content Include="Content\img\DSCF5260_Lredit.jpg" />
     <Content Include="Content\img\DSCF5408_Lredit.jpg" />
     <Content Include="Content\img\projects\howToPhotography\web1.PNG" />
+    <Content Include="Content\img\projects\howToPhotography\web2.PNG" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -199,6 +200,10 @@
     <Content Include="fonts\PlayfairDisplay-BoldItalic.ttf" />
     <Content Include="fonts\PlayfairDisplay-Italic.ttf" />
     <Content Include="fonts\PlayfairDisplay-Regular.ttf" />
+    <Content Include="fonts\Tinos-Bold.ttf" />
+    <Content Include="fonts\Tinos-BoldItalic.ttf" />
+    <Content Include="fonts\Tinos-Italic.ttf" />
+    <Content Include="fonts\Tinos-Regular.ttf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
