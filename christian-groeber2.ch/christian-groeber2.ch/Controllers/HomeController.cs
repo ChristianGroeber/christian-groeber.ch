@@ -34,7 +34,7 @@ namespace christian_groeber2.ch.Controllers
             return View();
         }
 
-        public ActionResult Projects()
+        public ActionResult Portfolio()
         {
             ViewBag.Message = "Your contact page.";
 

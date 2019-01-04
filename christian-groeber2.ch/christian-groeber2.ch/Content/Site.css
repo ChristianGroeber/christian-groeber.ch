@@ -25,9 +25,15 @@ main{
     background-color:rgba(0,0,0,0.7) !important;
 }
 
-footer{
-    background-color:black;
-    color:white;
+footer {
+    /**background: -moz-linear-gradient(top, rgba(132,132,132,0.51) 0%, rgba(9,9,9,1) 99%, rgba(9,9,9,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(132,132,132,0.51) 0%,rgba(9,9,9,1) 99%,rgba(9,9,9,1) 100%);
+    background: linear-gradient(to bottom, rgba(132,132,132,0.51) 0%,rgba(9,9,9,1) 99%,rgba(9,9,9,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82848484', endColorstr='#090909',GradientType=0 );*/
+    background-color: #0C0C0C;
+    color: white;
+    padding: 20px;
+    min-height: 200px;
 }
 
 .site-content {
@@ -129,6 +135,10 @@ footer{
 .navbar-nav {
     /*padding-left:70%;*/
     float: right !important;
+}
+
+a.dropdown-toggle:hover{
+    
 }
 
 .body-content{

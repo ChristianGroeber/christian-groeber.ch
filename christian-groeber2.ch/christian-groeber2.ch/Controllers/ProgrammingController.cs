@@ -6,24 +6,28 @@ using System.Web.Mvc;
 
 namespace christian_groeber2.ch.Controllers
 {
-    public class ProjectsController : Controller
+    public class ProgrammingController : Controller
     {
         // GET: Project
+        [Route("Portfolio/Programming/PreciousHands")]
         public ActionResult PreciousHands()
         {
             return View();
         }
 
+        [Route("Portfolio/Programming/ParisBlog")]
         public ActionResult ParisBlog()
         {
             return View();
         }
 
+        [Route("Portfolio/Programming/howToPhotography")]
         public ActionResult howToPhotography()
         {
             return View();
         }
 
+        [Route("Portfolio/Programming/CokePad")]
         public ActionResult CokePad()
         {
             return View();

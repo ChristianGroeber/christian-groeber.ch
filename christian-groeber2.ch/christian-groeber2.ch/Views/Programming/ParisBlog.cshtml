@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Paris Blog";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/custom-css/projects.css" rel="stylesheet" />
+<link href="~/Content/Site.css" rel="stylesheet" />
+<script>
+    $(document).ready(function () {
+        var name = "paris-blog";
+        if ($(".site-content").hasClass(name)) {
+            $("body").css("background-color", $(".paris-blog").css("background-color"));
+            $(".site-content").removeClass(name);
+        }
+    });
+</script>
+
+<div class="site-content paris-blog">
+    <h2>ParisBlog</h2>
+    <h4></h4>
+</div>

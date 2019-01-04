@@ -23,12 +23,25 @@
     box-shadow: 3px 3px 4px rgba(0,0,0,0.7);
 }
 
+img{
+    width:100%;
+}
+
 a{
     color:#333;
 }
 a:hover{
     color:#333;
     text-decoration:none;
+}
+
+a.styled{
+    color:black;
+}
+
+a.styled:hover{
+    color:black;
+    text-decoration:underline;
 }
 
 h1, h2, h3, h4, h5, h6, p{

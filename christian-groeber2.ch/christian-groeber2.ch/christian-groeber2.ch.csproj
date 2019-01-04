@@ -148,7 +148,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ProjectsController.cs" />
+    <Compile Include="Controllers\PortfolioController.cs" />
+    <Compile Include="Controllers\ProgrammingController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -159,8 +160,8 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\custom css\contact.css" />
-    <Content Include="Content\custom css\projects.css" />
+    <Content Include="Content\custom-css\contact.css" />
+    <Content Include="Content\custom-css\projects.css" />
     <Content Include="Content\img\About-me\P3300104_Lredit.jpg" />
     <Content Include="Content\img\building.jpg" />
     <Content Include="Content\img\back6.png" />
@@ -183,8 +184,10 @@
     <Content Include="Content\img\DSCF5259_Lredit.jpg" />
     <Content Include="Content\img\DSCF5260_Lredit.jpg" />
     <Content Include="Content\img\DSCF5408_Lredit.jpg" />
-    <Content Include="Content\img\projects\howToPhotography\web1.PNG" />
-    <Content Include="Content\img\projects\howToPhotography\web2.PNG" />
+    <Content Include="Content\img\Projects\howToPhotography\long-arrow-right.png" />
+    <Content Include="Content\img\Projects\howToPhotography\photo-gallery.PNG" />
+    <Content Include="Content\img\Projects\howToPhotography\web1.PNG" />
+    <Content Include="Content\img\Projects\howToPhotography\web2.PNG" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -229,13 +232,16 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Projects.cshtml" />
+    <Content Include="Views\Portfolio\Programming.cshtml" />
     <Content Include="Views\Home\Photography.cshtml" />
     <Content Include="Views\Home\Other.cshtml" />
-    <Content Include="Views\Projects\PreciousHands.cshtml" />
-    <Content Include="Views\Projects\ParisBlog.cshtml" />
-    <Content Include="Views\Projects\CokePad.cshtml" />
-    <Content Include="Views\Projects\howToPhotography.cshtml" />
+    <Content Include="Views\Programming\PreciousHands.cshtml" />
+    <Content Include="Views\Programming\ParisBlog.cshtml" />
+    <Content Include="Views\Programming\CokePad.cshtml" />
+    <Content Include="Views\Programming\howToPhotography.cshtml" />
+    <Content Include="Views\Home\Portfolio.cshtml" />
+    <Content Include="Views\Portfolio\Video.cshtml" />
+    <Content Include="Views\Portfolio\Photos.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

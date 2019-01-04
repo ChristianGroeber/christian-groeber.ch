@@ -1,7 +1,7 @@
 ﻿@{
     ViewBag.Title = "Projects";
 }
-<link href="~/Content/custom css/projects.css" rel="stylesheet" />
+<link href="~/Content/custom-css/projects.css" rel="stylesheet" />
 
 <div class="site-content main-page">
     <h2>Projects</h2>
@@ -12,7 +12,7 @@
     <div id="running">
         <div class="row">
             <div class="col-sm-12">
-                <a href="/Projects/PreciousHands" class="project precious-hands">
+                <a href="@Url.Action("PreciousHands", "Programming")" class="project precious-hands">
                     <h4>Project Precious Hands</h4>
                     <p class="project-description">
                         In school we have to do something that is called "IDPA" which translates to "Interdisciplinary Project Work".
@@ -33,7 +33,7 @@
     <div id="finished">
         <div class="row">
             <div class="col-sm-6">
-                <a class="project paris-blog" href="/Projects/ParisBlog">
+                <a class="project paris-blog" href="@Url.Action("ParisBlog", "Programming")">
                     <h4>Paris Blog</h4>
                     <p>
                         Like all other IMS students as well I had the priviledge of getting to go to a foreign land to learn their language.<br />
@@ -46,7 +46,7 @@
                 </a>
             </div>
             <div class="col-sm-6">
-                <a class="project howToPhotography" href="/Projects/howToPhotography">
+                <a class="project howToPhotography" href="@Url.Action("howToPhotography", "Programming")">
                     <h4>How To Photography</h4>
                     <p>
                         This is my very first website.<br />
@@ -60,7 +60,7 @@
         </div>
         <div class="row">
             <div class="col-sm-12">
-                <a class="project CokePad" href="/Projects/CokePad">
+                <a class="project CokePad" href="@Url.Action("CokePad", "Programming")">
                     <h4>Coke Launchpad</h4>
                     <p>
                         We had to work on a project with an Arduino and, since I was teaming up with one of my more musical
