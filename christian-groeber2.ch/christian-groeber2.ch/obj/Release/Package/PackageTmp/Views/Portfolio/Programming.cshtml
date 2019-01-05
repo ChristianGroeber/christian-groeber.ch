@@ -1,0 +1,79 @@
+﻿@{
+    ViewBag.Title = "Projects";
+}
+<link href="~/Content/custom-css/projects.css" rel="stylesheet" />
+
+<div class="site-content main-page">
+    <h2>Projects</h2>
+    <h5>
+        Here I will talk about my IT related projects like my very first website or a weird Arduino project.
+    </h5>
+    <h3>Running Projects</h3>
+    <div id="running">
+        <div class="row">
+            <div class="col-sm-12">
+                <a href="@Url.Action("PreciousHands", "Programming")" class="project precious-hands">
+                    <h4>Project Precious Hands</h4>
+                    <p class="project-description">
+                        In school we have to do something that is called "IDPA" which translates to "Interdisciplinary Project Work".
+                        Precious Hands is an organisation in India that helps children go to school by finding people that will donate money
+                        to one or more children. I told someone in my church that we were still looking for a proper project and how luck would
+                        have it the workers in India need a tool to keep track of all the payments. Although they did try using Excel that
+                        didn't work very well so they went back to the old-school pen and paper. But that it very messy and hard to keep track of.<br />
+                        So our job is to create a desktop tool that will help them log all the payments and have an overview of all their children
+                        and donors.<br />
+                        Click here to read more.
+                    </p>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <h3>Finished Projects</h3>
+    <div id="finished">
+        <div class="row">
+            <div class="col-sm-6">
+                <a class="project paris-blog" href="@Url.Action("ParisBlog", "Programming")">
+                    <h4>Paris Blog</h4>
+                    <p>
+                        Like all other IMS students as well I had the priviledge of getting to go to a foreign land to learn their language.<br />
+                        If I had had the choice I would most likely have gone to Ireland but my parents insisted that I went to learn
+                        French which I am not as good at as English. And because they are funding that I couldn't really say no.<br />
+                        So I decided to go to Paris.<br />
+                        On this Blog I made my first steps in PHP and I also discovered a very interesting way of using Google Sheets as a CMS.<br />
+                        So click here if you would like to read more about that.
+                    </p>
+                </a>
+            </div>
+            <div class="col-sm-6">
+                <a class="project howToPhotography" href="@Url.Action("howToPhotography", "Programming")">
+                    <h4>How To Photography</h4>
+                    <p>
+                        This is my very first website.<br />
+                        I created it during my first year of IMS and it is mostly static because I didn't know any scripting language yet. <br />
+                        I spent many hours working on this page and, even though it is a very simple page and nothing overly impressive I am still
+                        very proud of it.<br />
+                        So click here to read more about that.
+                    </p>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <a class="project CokePad" href="@Url.Action("CokePad", "Programming")">
+                    <h4>Coke Launchpad</h4>
+                    <p>
+                        We had to work on a project with an Arduino and, since I was teaming up with one of my more musical
+                        friends we ended up creating a Launchpad that worked with Coke Cans.<br />
+                        Although it didn't work perfectly it still a interesting build.<br />
+                        Click here if you want to know how the heck we played music with Coke cans.
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <h3>Planned Projects</h3>
+    <div id="planned">
+
+    </div>
+</div>

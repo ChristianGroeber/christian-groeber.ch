@@ -207,6 +207,7 @@
     <Content Include="fonts\Tinos-BoldItalic.ttf" />
     <Content Include="fonts\Tinos-Italic.ttf" />
     <Content Include="fonts\Tinos-Regular.ttf" />
+    <None Include="Properties\PublishProfiles\christian-groeber2ch20190105021335 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

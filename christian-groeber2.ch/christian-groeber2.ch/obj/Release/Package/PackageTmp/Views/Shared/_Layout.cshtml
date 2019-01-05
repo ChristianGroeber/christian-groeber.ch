@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var navheight = $(".nav").height();
+            $(window).scroll(function (event) {
+                var screenheight = parseInt($(document).height());
+                var st = $(this).scrollTop();
+                if (st >= navheight) {
+                    $(".navbar").css("background-color", "rgba(0,0,0,0.75)");
+                } else if (st <= navheight) {
+                    $(".navbar").css("background-color", "rgba(0,0,0,1)");
+                }
+            });
+
+            var screenheight = $(window).height();
+            $(".jumbotron").css("height", screenheight - navheight);
+            $(".gradient").css("height", screenheight - navheight);
+            $(".jumbotron").css("background-size", $(window).width() + "px auto");
+        });
+    </script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Christian Gröber", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Portfolio<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Programming", "Programming", "Portfolio")</li>
+                            <li>@Html.ActionLink("Photos", "Photos", "Portfolio")</li>
+                            <li>@Html.ActionLink("Video", "Video", "Portfolio")</li>
+                        </ul>
+                    </li>
+                    <li>@Html.ActionLink("Photography", "Photography", "Home")</li>
+                    <li>@Html.ActionLink("About Me", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Other", "Other", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <footer>
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>&copy; Christian Gröber</p><br />
+                    <div>
+                        Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a>
+                        from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by
+                        <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="col-sm-4"></div>
+                        <a class="col-sm-2" target="_blank" href="https://twitter.com/christiangr1998"><img src="~/Content/img/contact/twitter.svg" width="50"/></a>
+                        <a class="col-sm-2" target="_blank" href="https://www.instagram.com/that.swiss.photographer/?hl=de"><img src="~/Content/img/contact/instagram.svg" width="50"/></a>
+                        <div class="col-sm-4"></div>                    
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <h5>Contact</h5>
+                    <p>
+                        Telephone: +41 76 605 81 05<br />
+                        E-Mail: <a href="mailto:christian.groeber@bluewin.ch">christian.groeber@bluewin.ch</a>
+                    </p>
+                </div>
+            </div>
+            
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

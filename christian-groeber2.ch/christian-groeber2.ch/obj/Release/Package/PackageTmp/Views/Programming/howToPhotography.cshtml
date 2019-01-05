@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "howToPhotography";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/custom-css/projects.css" rel="stylesheet" />
+<link href="~/Content/Site.css" rel="stylesheet" />
+<script>
+    $(document).ready(function () {
+        if ($(".site-content").hasClass("howToPhotography")) {
+            $("body").css("background-color", $(".howToPhotography").css("background-color"));
+            $(".site-content").removeClass("howToPhotography");
+        }
+    });
+</script>
+<div class="site-content howToPhotography">
+    <h2>My very first Website</h2>
+    <h4 id="subtitle">
+        This is my very first website.<br />
+        I created it during my first year of IMS and it is mostly static because I didn't know any scripting language yet. <br />
+        I spent many hours working on this page and, even though it is a very simple page and nothing overly impressive I am still
+        very proud of it.<br />
+    </h4>
+    <p>
+        I really enjoyed learning how to create websites so I decided to make one for myself about my hobby photography.<br />
+        I spent many, many hours on it, trying to also somehow implement a Layout (I had no idea MVC and Razor existed back then)
+        and also making it look nice on mobile and on PC and making it bilangual.
+        I had even come up with a new, revolutionary naming system.<br /><br />
+        On the right side of the web page I had a small "news" segment which I wanted to keep updated, sort of like a small blog.
+        The Problem there was that this segment had to be visible from all pages. It took me very long to find this but I had finally
+        found a bit of JavaScript that would enable me to get any HTML site on the page with just one line of code.<br />
+        But of course, that sounds way too good to be true. Don't get me wrong, it does work, but it messes up the CSS really bad.
+        I had to test around and see if I could get it back to look properly for ages but I eventually did it.<br />
+        By that time I had definitely seen enough of CSS so I just went ahead and created all the pages from scratch to make it look
+        good on Mobile
+    </p>
+    <div class="row">
+        <img class="col-sm-4" src="~/Content/img/projects/howToPhotography/web1.PNG" />
+        <img class="col-sm-4" src="~/Content/img/projects/howToPhotography/long-arrow-right.png" />
+        <img class="col-sm-4" src="~/Content/img/projects/howToPhotography/web2.PNG" />
+    </div>
+
+    <h3 id="gallery">Gallery</h3>
+    <p>
+        Since that was a photography website I had to build a gallery. Luckily, I managed to find a website that offered a number of
+        all-CSS gallery templates. I did some modification to it to make it look the way I wanted it to.<br />
+        In the end, it looked something like this:
+    </p>
+    <img src="~/Content/img/Projects/howToPhotography/photo-gallery.PNG" />
+    <p>
+        Although it isn't the most fancy gallery of them all out there, it did the job.<br />
+        The only downside was, it wasn't too developer-friendly, meaning it wasn't too easy adding new pictures in post.<br />
+        On my website <a class="styled" href="@Url.Action("ParisBlog", "Programming")">about my stay in Paris</a> I came up with a new system that used the power 
+        of PHP to go through all the files in a certain directory and put the pictures on the site.
+    </p>
+</div>
+

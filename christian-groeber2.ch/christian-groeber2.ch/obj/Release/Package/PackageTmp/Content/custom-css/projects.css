@@ -1,0 +1,66 @@
+﻿body{
+    background-color:rgb(232, 232, 232);
+}
+
+.main-page{
+    background-color:rgba(179, 179, 179, 0) !important;
+    width:100% !important;
+    box-shadow:none !important;
+}
+
+.row{
+    margin-bottom: 20px!important;
+}
+
+.project {
+    display: block;
+    width: 100%;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+    padding:15px;
+    margin-top: 10px;
+}
+.project:hover{
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.7);
+}
+
+img{
+    width:100%;
+}
+
+a{
+    color:#333;
+}
+a:hover{
+    color:#333;
+    text-decoration:none;
+}
+
+a.styled{
+    color:black;
+}
+
+a.styled:hover{
+    color:black;
+    text-decoration:underline;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    padding-bottom:15px !important;
+    line-height:25px !important;
+}
+
+.precious-hands{
+    background-color:rgba(249, 23, 23, 0.5);
+}
+
+.paris-blog{
+    background-color:rgba(27, 28, 244, 0.5);
+}
+
+.howToPhotography{
+    background-color:rgba(86, 240, 31, 0.5) !important;
+}
+
+.CokePad{
+    background-color:rgba(207, 233, 27, 0.5);
+}
