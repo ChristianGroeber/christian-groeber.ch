@@ -10,6 +10,7 @@
     <link href="~/Content/css/bootstrap.css" rel="stylesheet" />
     @Scripts.Render("~/bundles/modernizr")
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
     <script>
         $(document).ready(function () {
             var navheight = $(".nav").height();
@@ -22,8 +23,17 @@
                     $(".navbar").css("background-color", "rgba(0,0,0,1)");
                 }
             });
-
             var screenheight = $(window).height();
+            var screenwidth = $(window).width();
+
+            if (screenwidth <= 550) {
+                console.log(screenwidth);
+                console.log($(".site-content").css("width"));
+                $(".site-content").css("width", "95% !important");
+            }
+
+
+
             $(".jumbotron").css("height", screenheight - navheight);
             $(".gradient").css("height", screenheight - navheight);
             $(".jumbotron").css("background-size", $(window).width() + "px auto");
@@ -60,7 +70,9 @@
         </div>
     </div>
     <div class="container body-content">
-        @RenderBody()
+        <div class="site-content">
+            @RenderBody()
+        </div>
         <footer>
             <div class="row">
                 <div class="col-sm-4">

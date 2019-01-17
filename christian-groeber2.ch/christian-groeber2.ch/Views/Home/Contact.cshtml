@@ -2,85 +2,96 @@
     ViewBag.Title = "Contact";
 }
 <link href="~/Content/custom-css/contact.css" rel="stylesheet" />
+<script>
+    $(document).ready(function () {
+        var screenwidth = $(window).width();
 
-<div class="site-content">
-    <p class="myh2">So you would like to</p>
-    <p class="myh1">Get in touch with me?</p>
-    <p class="myh3">Well here is how:</p>
+        if (screenwidth <= 550) {
+            console.log(screenwidth);
+            console.log($(".site-content").css("width"));
+            $(".site-content").css("width", "95% !important");
+        }
+    });
+</script>
 
-    <a href="https://www.instagram.com/that.swiss.photographer" target="_blank" class="medium row">
-        <div class="col-sm-8">
-            <p class="social-media">Instagram</p>
-            <p>
-                As a photographer it is a given that I have an Instagram account. Sadly I'm not very active on there but I still think
-                there's a fairly nice number of images that are worthy to be looked at.
-            </p>
-        </div>
-        <div class="col-sm-4"><img class="profile" src="~/Content/img/contact/instagram.svg" /></div>
-    </a>
+<!--<div class="site-content">-->
+<p class="myh2">So you would like to</p>
+<p class="myh1">Get in touch with me?</p>
+<p class="myh3">Well here is how:</p>
 
-    <a href="https://twitter.com/christiangr1998" target="_blank" class="medium row">
-        <div class="col-sm-8">
-            <p class="social-media">Twitter</p>
-            <p>
-                Since I love dad jokes - yes I know and I'm not sorry for it - I just couldn't resist the possibility to 
-                say "How a little Birdie told me" every time I read something interesting on there.<br />
-                So here you go, my overly fabulous Twitter account.
-            </p>
-        </div>
-        <img class="col-sm-4 profile" src="~/Content/img/contact/twitter.svg" />
-    </a>
-
-    <a href="https://christophersen.tumblr.com/" target="_blank" class="medium row">
-        <div class="col-sm-8">
-            <p class="social-media">Tumblr</p>
-            <p>
-                Are you as surprised that this still exists as I am? Well, it does so here's the link to my profile.
-            </p>
-        </div>
-        <img class="col-sm-4 profile" src="~/Content/img/contact/tumblr.svg" />
-    </a>
-
-    <div class="medium row">
-        <div class="col-sm-8">
-            <p class="social-media">E-Mail</p>
-            <p>
-                Of course I do have many E-Mail Adresses so choose whichever one you would like to message me on.
-            </p><br />
-            <a href="mailto:christian.groeber@bluewin.ch">bluewin.ch</a><br />
-            <a href="mailto:christian.groeber@stud.altekanti.ch">AKSA</a><br />
-            <a href="mailto:christian.groeber@stud.bbbaden.ch">BBBaden</a>
-        </div>
-        <img class="col-sm-4 profile" src="~/Content/img/contact/envelope-red.svg" />
+<a href="https://www.instagram.com/that.swiss.photographer" target="_blank" class="medium row">
+    <div class="col-sm-8">
+        <p class="social-media">Instagram</p>
+        <p>
+            As a photographer it is a given that I have an Instagram account. Sadly I'm not very active on there but I still think
+            there's a fairly nice number of images that are worthy to be looked at.
+        </p>
     </div>
+    <div class="col-sm-4"><img class="profile" src="~/Content/img/contact/instagram.svg" /></div>
+</a>
 
-    <div class="medium row">
-        <div class="col-sm-8">
-            <p class="social-media">Home Adress</p>
-            <p>
-                Yeah right as if I'm gonna post that online just like that. If you're that interested in me just write an <a href="#email">E-Mail</a>.
-            </p>
-        </div>
-        <img class="col-sm-4 profile" src="~/Content/img/contact/home.svg" />
+<a href="https://twitter.com/christiangr1998" target="_blank" class="medium row">
+    <div class="col-sm-8">
+        <p class="social-media">Twitter</p>
+        <p>
+            Since I love dad jokes - yes I know and I'm not sorry for it - I just couldn't resist the possibility to
+            say "How a little Birdie told me" every time I read something interesting on there.<br />
+            So here you go, my overly fabulous Twitter account.
+        </p>
     </div>
+    <img class="col-sm-4 profile" src="~/Content/img/contact/twitter.svg" />
+</a>
 
-    <div class="medium row">
-        <div class="col-sm-8">
-            <p class="social-media">Telephone</p>
-            <p>
-                Same story as with the adress, just write me an <a href="#email">E-Mail</a>.
-            </p>
-        </div>
-        <img class="col-sm-4 profile" src="~/Content/img/contact/phone-call.svg" />
+<a href="https://christophersen.tumblr.com/" target="_blank" class="medium row">
+    <div class="col-sm-8">
+        <p class="social-media">Tumblr</p>
+        <p>
+            Are you as surprised that this still exists as I am? Well, it does so here's the link to my profile.
+        </p>
     </div>
+    <img class="col-sm-4 profile" src="~/Content/img/contact/tumblr.svg" />
+</a>
 
-    <div class="medium row">
-        <div class="col-sm-8">
-            <p class="social-media">Fax</p>
-            <p>
-                Yeah right
-            </p>
-        </div>
-        <img class="col-sm-4 profile" src="~/Content/img/contact/fax.svg" />
+<div class="medium row">
+    <div class="col-sm-8">
+        <p class="social-media">E-Mail</p>
+        <p>
+            Of course I do have many E-Mail Adresses so choose whichever one you would like to message me on.
+        </p><br />
+        <a href="mailto:christian.groeber@bluewin.ch">bluewin.ch</a><br />
+        <a href="mailto:christian.groeber@stud.altekanti.ch">AKSA</a><br />
+        <a href="mailto:christian.groeber@stud.bbbaden.ch">BBBaden</a>
     </div>
+    <img class="col-sm-4 profile" src="~/Content/img/contact/envelope-red.svg" />
 </div>
+
+<div class="medium row">
+    <div class="col-sm-8">
+        <p class="social-media">Home Adress</p>
+        <p>
+            Yeah right as if I'm gonna post that online just like that. If you're that interested in me just write an <a href="#email">E-Mail</a>.
+        </p>
+    </div>
+    <img class="col-sm-4 profile" src="~/Content/img/contact/home.svg" />
+</div>
+
+<div class="medium row">
+    <div class="col-sm-8">
+        <p class="social-media">Telephone</p>
+        <p>
+            Same story as with the adress, just write me an <a href="#email">E-Mail</a>.
+        </p>
+    </div>
+    <img class="col-sm-4 profile" src="~/Content/img/contact/phone-call.svg" />
+</div>
+
+<div class="medium row">
+    <div class="col-sm-8">
+        <p class="social-media">Fax</p>
+        <p>
+            Yeah right
+        </p>
+    </div>
+    <img class="col-sm-4 profile" src="~/Content/img/contact/fax.svg" />
+</div>
+<!--</div>-->

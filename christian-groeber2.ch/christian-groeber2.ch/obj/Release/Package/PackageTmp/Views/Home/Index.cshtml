@@ -3,190 +3,209 @@
 }
 <link href="~/Content/css/Site.css" rel="stylesheet" />
 <link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+<script>
+    $(document).ready(function () {
+        var winHeight = $(window).height();
+        var winWidth = $(window).width();
+        console.log(winHeight);
+        $(".post").css("height", winHeight + "px");
+        $(".post").css("background-size", $(window).width() + "px auto");
+        $("h1").css("padding-top", $(window).height() / 2 + "px");
+        $(".post-box").css("width", winWidth * 0.8 + "px");
+        $(".post-empty-box").css("width", winWidth * 0.2 + "px");
+        $(".post-box").css("background-size", $(window).height() + "px auto");
+
+        $(".button").click(function () {
+            var go;
+            if ($(this).hasClass("about-me")) {
+                document.location.href = "About-me";
+            } else if ($(this).hasClass("photography")) {
+                document.location.href = "Photography";
+            } else if ($(this).hasClass("projects")) {
+                document.location.href = "Portfolio";
+            } else if ($(this).hasClass("contact")) {
+                document.location.href = "Contact";
+            } else if ($(this).hasClass("other")) {
+                document.location.href = "Other";
+            } else {
+                alert("404 Page doesn't exist");
+            }
+       });
+
+        if (winWidth <= 700) {
+            
+            var classes = ["about-this-page", "about-me", "photography", "projects", "contact", "other"];
+            var img = ["guy-walking", "old-building", "bar", "fence", "guy", "building"];
+            $(".jumbotron").css("background-image", "url(../Content/img/mobile/graffiti-mob.jpg !important)");
+            $(".jumbotron").css("background-size", "auto " + winHeight + "px");
+           
+            for (i = 0; i < classes.length; i++) {
+                $(".post." + classes[i]).css("background-image", "url(../Content/img/mobile/" + img[i] + "-mob.jpg)");
+            }
+
+        }
+    });
+</script>
+
+<style>
+    .jumbotron {
+        background-image: url(../Content/img/graffiti.jpg);
+        background-position:center;
+    }
+
+    .post{
+        background-position:center;
+    }
+
+    .post.about-this-page {
+        background-image: url(../Content/img/guy-walking.jpg);
+    }
+
+    .post.about-me {
+        background-image: url(../Content/img/old-building.jpg);
+    }
+
+    .post.photography {
+        background-image: url('../Content/img/bar.jpg');
+    }
+
+    .post.projects {
+        background-image: url('../Content/img/fence.jpg');
+    }
+
+    .post.contact {
+        background-image: url('../Content/img/guy.jpg');
+    }
+
+    .post.other {
+        background-image: url('../Content/img/building.jpg');
+    }
+
+    .post-text {
+        padding-top: 80px;
+    }
+
+    .padded-post {
+        padding-top: 100px;
+    }
+
+    .post-text.about-this-page {
+        max-width: 500px;
+    }
+
+    .post-title.about-me {
+        text-align: right;
+    }
+
+    .post-title.contact {
+        text-align: right;
+    }
+
+    .post-text.about-me {
+        float: right;
+        max-width: 400px;
+        text-align: right;
+    }
+
+    .post-text.photography {
+        max-width: 350px;
+    }
+
+    .post-text.projects {
+        max-width: 350px;
+    }
+
+    .post-text.contact {
+        float: right;
+        text-align: right;
+        max-width: 350px;
+    }
+
+    .post-text.other {
+        max-width: 300px;
+    }
+
+    .post-box {
+        background-repeat: no-repeat;
+    }
+
+        .post-box.about-this-page {
+            background-image: url(../Content/img/back1.png);
+        }
+
+        .post-box.about-me {
+            background-image: url(../Content/img/back2.png);
+            background-position: right;
+            display: block;
+            float: right;
+        }
+
+        .post-box.photography {
+            background-image: url('../Content/img/back3.png');
+        }
+
+        .post-box.projects {
+            background-image: url('../Content/img/back4.png');
+        }
+
+        .post-box.contact {
+            background-image: url('../Content/img/back5.png');
+            background-position: right;
+            display: block;
+            float: right;
+        }
+
+        .post-box.other {
+            background-image: url('../Content/img/back6.png');
+        }
+
+    .button {
+        box-shadow: 2px 2px 3px rgba(0,0,0, 0.5);
+        border-radius: 10px;
+        text-align: center;
+        height: 50px;
+        max-width: 100px !important;
+        margin-top: 50px;
+        color: black;
+    }
+
+        .button.about-me {
+            background-color: rgba(122,201,67, 0.8);
+            margin-left: 300px;
+        }
+
+        .button.photography {
+            background-color: rgba(63,169,245, 0.8);
+            max-width: 200px !important;
+        }
+
+        .button.projects {
+            background-color: rgba(244,109,17,0.8);
+        }
+
+        .button.contact {
+            background-color: rgba(20,242,205,0.8);
+            margin-left: 250px !important;
+        }
+
+        .button.other {
+            background-color: rgba(206,237,24, 0.8)
+        }
+
+    p.button-text {
+        padding-top: 10px;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+
+    .button:hover {
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+    }
+</style>
 <div class="jumbotron">
     <div class="gradient">
-        <script>
-            $(document).ready(function () {
-                var winHeight = $(window).height();
-                var winWidth = $(window).width();
-                console.log(winHeight);
-                $(".post").css("height", winHeight + "px");
-                $(".post").css("background-size", $(window).width() + "px auto");
-                $("h1").css("padding-top", $(window).height() / 2 + "px");
-                $(".post-box").css("width", winWidth * 0.8 + "px");
-                $(".post-empty-box").css("width", winWidth * 0.2 + "px");
-                $(".post-box").css("background-size", $(window).height() + "px auto");
 
-                $(".button").click(function () {
-                    var go;
-                    if ($(this).hasClass("about-me")) {
-                        document.location.href = "/Home/About";
-                    } else if ($(this).hasClass("photography")) {
-                        document.location.href = "/Home/Photography";
-                    } else if ($(this).hasClass("projects")) {
-                        document.location.href = "/Home/Projects";
-                    } else if ($(this).hasClass("contact")) {
-                        document.location.href = "/Home/Contact";
-                    } else if ($(this).hasClass("other")) {
-                        document.location.href = "/Home/Other";
-                    } else {
-                        alert("404 Page doesn't exist");
-                    }
-                });
-            });
-        </script>
-
-        <style>
-            .jumbotron {
-                background-image: url(../Content/img/DSCF5260_Lredit.jpg);
-            }
-
-            .post.about-this-page {
-                background-image: url(../Content/img/DSCF5259_Lredit.jpg);
-            }
-
-            .post.about-me {
-                background-image: url(../Content/img/DSCF5408_Lredit.jpg);
-            }
-
-            .post.photography {
-                background-image: url('../Content/img/bar.jpg');
-            }
-
-            .post.projects {
-                background-image: url('../Content/img/fence.jpg');
-            }
-
-            .post.contact {
-                background-image: url('../Content/img/guy-walking.jpg');
-            }
-
-            .post.other {
-                background-image: url('../Content/img/building.jpg');
-            }
-
-            .post-text {
-                padding-top: 80px;
-            }
-
-            .padded-post {
-                padding-top: 100px;
-            }
-
-            .post-text.about-this-page {
-                max-width: 500px;
-            }
-
-            .post-title.about-me {
-                text-align: right;
-            }
-
-            .post-title.contact {
-                text-align: right;
-            }
-
-            .post-text.about-me {
-                float: right;
-                max-width: 400px;
-                text-align: right;
-            }
-
-            .post-text.photography {
-                max-width: 350px;
-            }
-
-            .post-text.projects {
-                max-width: 350px;
-            }
-
-            .post-text.contact {
-                float: right;
-                text-align: right;
-                max-width: 350px;
-            }
-
-            .post-text.other {
-                max-width: 300px;
-            }
-
-            .post-box {
-                background-repeat: no-repeat;
-            }
-
-                .post-box.about-this-page {
-                    background-image: url(../Content/img/back1.png);
-                }
-
-                .post-box.about-me {
-                    background-image: url(../Content/img/back2.png);
-                    background-position: right;
-                    display: block;
-                    float: right;
-                }
-
-                .post-box.photography {
-                    background-image: url('../Content/img/back3.png');
-                }
-
-                .post-box.projects {
-                    background-image: url('../Content/img/back4.png');
-                }
-
-                .post-box.contact {
-                    background-image: url('../Content/img/back5.png');
-                    background-position: right;
-                    display: block;
-                    float: right;
-                }
-
-                .post-box.other {
-                    background-image: url('../Content/img/back6.png');
-                }
-
-            .button {
-                box-shadow: 2px 2px 3px rgba(0,0,0, 0.5);
-                border-radius: 10px;
-                text-align: center;
-                height: 50px;
-                max-width: 100px !important;
-                margin-top: 50px;
-                color: black;
-            }
-
-                .button.about-me {
-                    background-color: rgba(122,201,67, 0.8);
-                    margin-left: 300px;
-                }
-
-                .button.photography {
-                    background-color: rgba(63,169,245, 0.8);
-                    max-width: 200px !important;
-                }
-
-                .button.projects {
-                    background-color: rgba(244,109,17,0.8);
-                }
-
-                .button.contact {
-                    background-color: rgba(20,242,205,0.8);
-                    margin-left: 250px !important;
-                }
-
-                .button.other {
-                    background-color: rgba(206,237,24, 0.8)
-                }
-
-            p.button-text {
-                padding-top: 10px;
-                text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-            }
-
-            .button:hover {
-                cursor: pointer;
-                color: black;
-                text-decoration: none;
-            }
-        </style>
         <h1>Welcome to my homepage</h1>
     </div>
 </div>
