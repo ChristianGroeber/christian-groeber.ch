@@ -23,6 +23,12 @@ namespace christian_groeber2.ch
                 url: "{controller}/{action}",
                 defaults: new { controller = "Home", action = "Index"}
             );
+
+            routes.MapRoute(
+                name: "Home/About",
+                url: "About-me",
+                defaults: new {controller = "Home", action = "About"}
+                );
         }
     }
 }

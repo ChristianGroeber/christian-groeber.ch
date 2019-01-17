@@ -156,10 +156,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap-theme.min.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="flaticon.ico" />
+    <Content Include="Content\css\bootstrap-theme.css" />
+    <Content Include="Content\css\bootstrap-theme.min.css" />
+    <Content Include="Content\css\bootstrap.css" />
     <Content Include="Content\custom-css\contact.css" />
     <Content Include="Content\custom-css\projects.css" />
     <Content Include="Content\img\About-me\P3300104_Lredit.jpg" />
@@ -188,10 +188,9 @@
     <Content Include="Content\img\Projects\howToPhotography\photo-gallery.PNG" />
     <Content Include="Content\img\Projects\howToPhotography\web1.PNG" />
     <Content Include="Content\img\Projects\howToPhotography\web2.PNG" />
-    <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
+    <Content Include="Content\css\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -207,6 +206,7 @@
     <Content Include="fonts\Tinos-BoldItalic.ttf" />
     <Content Include="fonts\Tinos-Italic.ttf" />
     <Content Include="fonts\Tinos-Regular.ttf" />
+    <None Include="Properties\PublishProfiles\christian-groeber - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\christian-groeber2ch20190105021335 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -254,10 +254,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-theme.min.css.map" />
-    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\css\bootstrap.min.css.map" />
+    <Content Include="Content\css\bootstrap.css.map" />
+    <Content Include="Content\css\bootstrap-theme.min.css.map" />
+    <Content Include="Content\css\bootstrap-theme.css.map" />
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
