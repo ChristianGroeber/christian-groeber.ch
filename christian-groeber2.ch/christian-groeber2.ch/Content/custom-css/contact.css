@@ -2,6 +2,10 @@
     font-size: 30px;
 }
 
+img{
+    max-width:300px;
+}
+
 .myh1 {
     font-size: 60px;
     color: black;

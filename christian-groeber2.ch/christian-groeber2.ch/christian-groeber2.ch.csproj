@@ -156,6 +156,22 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\Index-Mobile.css" />
+    <Content Include="Content\custom-css\Index-Desktop.css" />
+    <Content Include="Content\img\bar.jpg" />
+    <Content Include="Content\img\building.jpg" />
+    <Content Include="Content\img\graffiti.jpg" />
+    <Content Include="Content\img\fence.jpg" />
+    <Content Include="Content\img\guy-walking.jpg" />
+    <Content Include="Content\img\guy.jpg" />
+    <Content Include="Content\img\mobile\bar-mob.jpg" />
+    <Content Include="Content\img\mobile\building-mob.jpg" />
+    <Content Include="Content\img\mobile\fence-mob.jpg" />
+    <Content Include="Content\img\mobile\graffiti-mob.jpg" />
+    <Content Include="Content\img\mobile\guy-mob.jpg" />
+    <Content Include="Content\img\mobile\guy-walking-mob.jpg" />
+    <Content Include="Content\img\mobile\old-building-mob.jpg" />
+    <Content Include="Content\img\old-building.jpg" />
     <Content Include="flaticon.ico" />
     <Content Include="Content\css\bootstrap-theme.css" />
     <Content Include="Content\css\bootstrap-theme.min.css" />
@@ -163,7 +179,6 @@
     <Content Include="Content\custom-css\contact.css" />
     <Content Include="Content\custom-css\projects.css" />
     <Content Include="Content\img\About-me\P3300104_Lredit.jpg" />
-    <Content Include="Content\img\building.jpg" />
     <Content Include="Content\img\back6.png" />
     <Content Include="Content\img\back5.png" />
     <Content Include="Content\img\contact\envelope-red.svg" />
@@ -173,17 +188,11 @@
     <Content Include="Content\img\contact\phone-call.svg" />
     <Content Include="Content\img\contact\tumblr.svg" />
     <Content Include="Content\img\contact\twitter.svg" />
-    <Content Include="Content\img\guy-walking.jpg" />
-    <Content Include="Content\img\fence.jpg" />
     <Content Include="Content\img\back4.png" />
     <Content Include="Content\img\back3.png" />
     <Content Include="Content\img\back2.png" />
     <Content Include="Content\img\back1.png" />
     <Content Include="Content\img\back1.svg" />
-    <Content Include="Content\img\bar.jpg" />
-    <Content Include="Content\img\DSCF5259_Lredit.jpg" />
-    <Content Include="Content\img\DSCF5260_Lredit.jpg" />
-    <Content Include="Content\img\DSCF5408_Lredit.jpg" />
     <Content Include="Content\img\Projects\howToPhotography\long-arrow-right.png" />
     <Content Include="Content\img\Projects\howToPhotography\photo-gallery.PNG" />
     <Content Include="Content\img\Projects\howToPhotography\web1.PNG" />
