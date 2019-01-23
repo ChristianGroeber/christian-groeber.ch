@@ -27,13 +27,9 @@
             var screenwidth = $(window).width();
 
             if (screenwidth <= 550) {
-                console.log(screenwidth);
-                console.log($(".site-content").css("width"));
-                $(".site-content").css("width", "95% !important");
+                $(".site-content").css("width", "95%");
             }
-
-
-
+            
             $(".jumbotron").css("height", screenheight - navheight);
             $(".gradient").css("height", screenheight - navheight);
             $(".jumbotron").css("background-size", $(window).width() + "px auto");
@@ -70,9 +66,7 @@
         </div>
     </div>
     <div class="container body-content">
-        <div class="site-content">
             @RenderBody()
-        </div>
         <footer>
             <div class="row">
                 <div class="col-sm-4">
