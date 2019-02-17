@@ -47,10 +47,10 @@ footer {
     box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
 }
 
-.profile-image{
-    max-height: 200px;
-    float:right;
-    margin-top: -80px;
+.profile-image {
+    /*height: 200px;
+    /*float:right;
+    margin-top: -80px;*/
 }
 
 .resume{

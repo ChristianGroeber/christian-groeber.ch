@@ -1,0 +1,56 @@
+﻿==================================================================
+https://keybase.io/christiangroeber
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://christian-groeber.azurewebsites.net
+  * I am christiangroeber (https://keybase.io/christiangroeber) on keybase.
+  * I have a public key ASA3lPUBLGUoUqbSyMzaGpVpV6YvTvNacjIyq6iQX-IwgQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01203794f5012c652852a6d2c8ccda1a956957a62f4ef35a723232aba8905fe230810a",
+      "host": "keybase.io",
+      "kid": "01203794f5012c652852a6d2c8ccda1a956957a62f4ef35a723232aba8905fe230810a",
+      "uid": "63a226a0f7067b6f64a7d01d65412719",
+      "username": "christiangroeber"
+    },
+    "merkle_root": {
+      "ctime": 1548864282,
+      "hash": "5c9d16880f3a9afa2cdf50f56a1ff3f306a57f1e2a605d1505c6bec6b071838bed22c546a48e322d81411585895c7ada5f10bdc7687134bd7548b9a323754555",
+      "hash_meta": "dec9b0d81205fd05f51c34f1139cce8ec6881b8fea9feb478b2e146e3bff9b54",
+      "seqno": 4663287
+    },
+    "service": {
+      "entropy": "PCxNQV9rQRMHTa4nljg+cKSU",
+      "hostname": "christian-groeber.azurewebsites.net",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.13.2"
+  },
+  "ctime": 1548864297,
+  "expire_in": 504576000,
+  "prev": "7c716e2fc9a0778af15e5d8f317eba1a70f13f8e165c9ce44ebbf05c4fc3aa9a",
+  "seqno": 11,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgN5T1ASxlKFKm0sjM2hqVaVemL07zWnIyMquokF/iMIEKp3BheWxvYWTESpcCC8QgfHFuL8mgd4rxXl2PMX66GnDxP44WXJzkTrvwXE/DqprEIPIC9zPoUXnHipq9XtbVQlYQ4kuQvNguXG6P/AMLLP/eAgHCo3NpZ8RAAvjNmmoW2/wffo6rVmEAD2EoPqfcc0/IIWvQR34q54bOiGgp/Ajr5Xn76gk1SZ1ncqqKvRVNUUVHm/79eqdnDahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIGJ7GtpZ/IQAU5lOUsIQ59jKeurDOpjMba2Fgi7RcIGeo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/christiangroeber
+
+==================================================================

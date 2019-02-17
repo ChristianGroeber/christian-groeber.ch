@@ -42,21 +42,10 @@ footer {
     min-height: 200px;
 }
 
-.site-content {
-    margin-top: 40px;
-    padding: 30px;
-    display: block;
-    width: 70%;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: rgb(230,230,230);
-    box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
-}
-
 .profile-image {
-    max-height: 200px;
+    /*max-height: 200px;
     float: right;
-    margin-top: -80px;
+    margin-top: -80px;*/
 }
 
 .resume {
