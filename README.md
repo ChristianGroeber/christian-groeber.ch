@@ -1,4 +1,4 @@
 # christian-groeber.ch
 My Homepage
 
-<a href="christian-groeber.azurewebsites.net" target="_blank">christian-groeber.ch</a>
+[christian-groeber.ch](https://christian-groeber.azurewebsites.net)
